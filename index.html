@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Apex Charts</title>
+</head>
+<body>
+
+  <div class="card">
+    <div class="top">
+      <div>
+        <h2>Channel Views</h2>
+        <p>By Month</p>
+      </div>
+
+      <div class="right">
+        <div class="pulse" title="Live"></div>
+
+        <button class="toggle" id="themeBtn" aria-label="Toggle theme">
+          🌙
+        </button>
+      </div>
+    </div>
+
+    <div class="stat">
+      <div class="label">Total Views</div>
+      <div class="value" id="totalViews">0</div>
+    </div>
+
+    <div class="controls">
+      <div class="control">
+        <label>Chart</label>
+        <button class="chip active" id="btnArea">Area</button>
+        <button class="chip" id="btnBar">Bar</button>
+      </div>
+
+      <div class="control">
+        <label>Simulation</label>
+        <button class="chip active" id="btnStart">Start</button>
+        <button class="chip" id="btnStop">Stop</button>
+      </div>
+
+      <div class="control colors">
+        <div class="color">
+          <label>Line</label>
+          <input type="color" id="lineColor" value="#3498db">
+        </div>
+        <div class="color">
+          <label>Fill</label>
+          <input type="color" id="fillColor" value="#60a5fa">
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrapper">
+      <div class="chart-area"></div>
+      <div class="grid"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="index.js"></script>
+</body>
+</html>
